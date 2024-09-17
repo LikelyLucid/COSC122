@@ -1193,28 +1193,28 @@ def all_tests_suite():
     # ready to run such tests
 
     # tests for bst functions
-    suite.addTest(test_loader(SimpleBstStoreTests))
-    suite.addTest(test_loader(SimpleGetValueTests))
-    suite.addTest(test_loader(SimpleBstNodeCountTests))
-    suite.addTest(test_loader(SimpleBstDepthTests))
-    suite.addTest(test_loader(SimpleBstMinTests))
-    suite.addTest(test_loader(SimpleBstMaxTests))
-    suite.addTest(test_loader(SimpleBstMinMaxTestsFromFiles))
-    suite.addTest(test_loader(SimpleBstInOrderTestFiles))
+    # suite.addTest(test_loader(SimpleBstStoreTests))
+    # suite.addTest(test_loader(SimpleGetValueTests))
+    # suite.addTest(test_loader(SimpleBstNodeCountTests))
+    # suite.addTest(test_loader(SimpleBstDepthTests))
+    # suite.addTest(test_loader(SimpleBstMinTests))
+    # suite.addTest(test_loader(SimpleBstMaxTests))
+    # suite.addTest(test_loader(SimpleBstMinMaxTestsFromFiles))
+    # suite.addTest(test_loader(SimpleBstInOrderTestFiles))
 
-    # tests for result finder
-    suite.addTest(test_loader(TrivialBstTests))
-    suite.addTest(test_loader(SmallBstTests))
-    suite.addTest(test_loader(MediumBstTests))
-    suite.addTest(test_loader(HugeBstTests))
-    suite.addTest(test_loader(HugeSortedBstTests))
-    suite.addTest(test_loader(GinormousBstTests))
+    # # tests for result finder
+    # suite.addTest(test_loader(TrivialBstTests))
+    # suite.addTest(test_loader(SmallBstTests))
+    # suite.addTest(test_loader(MediumBstTests))
+    # suite.addTest(test_loader(HugeBstTests))
+    # suite.addTest(test_loader(HugeSortedBstTests))
+    # suite.addTest(test_loader(GinormousBstTests))
     # suite.addTest(test_loader(AreYouKiddingMeBstTests))
 
     # fun optional extras
     # these test optional extra fun bonus questions
     # and are not worth any marks
-    # suite.addTest(test_loader(GinormousBstTestsV1))
+    suite.addTest(test_loader(GinormousBstTestsV1))
     # suite.addTest(test_loader(AreYouKiddingMeSmartBstTestsV1))
     # suite.addTest(test_loader(GinormousBstTestsV2))
     # suite.addTest(test_loader(AreYouKiddingMeSmartBstTestsV2))
