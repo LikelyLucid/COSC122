@@ -307,8 +307,23 @@ def smart_bst_result_finder_v1(tested, quarantined):
     """
     comparisons = 0
     results = []
-    # ---start student section---
-    # ===end student section===
+    is_sorted = all(tested[i][1] <= tested[i+1][1] for i in range(len(tested)-1))
+
+    if is_sorted:
+        root, comparisons = get_list_in_middle_order(tested, None)
+        # print(bst_nested_repr(root))
+    else:
+        root = BstNode(tested[0][1], (tested[0][0], tested[0][2]))
+        for nhi, name, result in tested[1:]:
+            comparisons += bst_store_pair(root, name, (nhi, result))
+
+    for name in quarantined:
+        result, comps = get_value_from_tree(root, name)
+        comparisons += comps
+        if result is None:
+            results.append((name, None, None))
+        else:
+            results.append((name, result[0], result[1]))
     return results, comparisons
 
 
