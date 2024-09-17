@@ -271,19 +271,23 @@ def bst_result_finder(tested, quarantined):
             results.append((name, result[0], result[1]))
     return results, comparisons
 
-def get_list_in_middle_order(list, root):
-    """ Similiar to binary search and should make the tree even"""
-    if len(list) == 0:
-        return None
-    middle_val = len(list) // 2
+def get_list_in_middle_order(tested_list, root, comparisons=0):
+    """Builds a balanced BST from a sorted list using middle order insertion."""
+    if not tested_list:
+        return root, comparisons
+
+    mid_index = len(tested_list) // 2
+    nhi, name, result = tested_list[mid_index]
+
     if root is None:
-        comp = 0
-        root = BstNode(list[middle_val][1], (list[middle_val][0], list[middle_val][2]))
+        root = BstNode(name, (nhi, result))
     else:
-        comp = bst_store_pair(root, list[middle_val][1], (list[middle_val][0], list[middle_val][2]))
-    get_list_in_middle_order(list[:middle_val], root)
-    get_list_in_middle_order(list[middle_val+1:], root)
-    return root, comp
+        comparisons += bst_store_pair(root, name, (nhi, result))
+
+    root, comparisons = get_list_in_middle_order(tested_list[:mid_index], root, comparisons)
+    root, comparisons = get_list_in_middle_order(tested_list[mid_index + 1:], root, comparisons)
+
+    return root, comparisons
 
 
 
@@ -310,8 +314,7 @@ def smart_bst_result_finder_v1(tested, quarantined):
     is_sorted = all(tested[i][1] <= tested[i+1][1] for i in range(len(tested)-1))
 
     if is_sorted:
-        root, comparisons = get_list_in_middle_order(tested, None)
-        # print(bst_nested_repr(root))
+        root, comparisons = get_list_in_middle_order(tested, None) 
     else:
         root = BstNode(tested[0][1], (tested[0][0], tested[0][2]))
         for nhi, name, result in tested[1:]:
