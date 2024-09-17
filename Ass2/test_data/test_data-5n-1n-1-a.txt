@@ -1,0 +1,13 @@
+# Number tested and their details:
+5
+2120003,Andrzej Challice,True
+2120004,Claribel Rayner,True
+2120005,Meris Dendi,False
+2120000,Nariko Shiell,True
+2120001,Sabina Starkes,False
+# Number quarantined and their names:
+1
+Claribel Rayner
+# Expected result details for quarantined people:
+Claribel Rayner,2120004,True
+

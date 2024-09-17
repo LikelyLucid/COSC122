@@ -1,0 +1,36 @@
+# Number tested and their details:
+10
+2120001,Lola Lun,True
+2120007,Matilda Knio,False
+2120009,Rodina Rabiasz,True
+2120010,Gloriana Luzarraga,True
+2120012,Daveta Bnrsport,False
+2120013,Ursuline Walas,False
+2120014,Ellissa Eriksson,True
+2120015,Winifred Hutton,False
+2120017,Giustina Beauchemin,False
+2120018,Simeon Struble,False
+# Number quarantined and their names:
+10
+Loise Schroeder
+Dnadoc Trisko
+Kiyoon Broulik
+Bassam Dougall
+Deanna Alkire
+Leon Denest
+Gloriana Luzarraga
+Amarjit Sldisk
+Elfrida Postavsky
+Herb Kurash
+# Expected result details for quarantined people:
+Loise Schroeder,None,None
+Dnadoc Trisko,None,None
+Kiyoon Broulik,None,None
+Bassam Dougall,None,None
+Deanna Alkire,None,None
+Leon Denest,None,None
+Gloriana Luzarraga,2120010,True
+Amarjit Sldisk,None,None
+Elfrida Postavsky,None,None
+Herb Kurash,None,None
+

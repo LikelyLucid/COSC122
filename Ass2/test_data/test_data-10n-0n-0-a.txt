@@ -1,0 +1,16 @@
+# Number tested and their details:
+10
+2120003,Andrzej Challice,True
+2120006,Cissiee Bednar,True
+2120007,Claribel Rayner,True
+2120004,Deanna Alkire,False
+2120001,Herb Kurash,False
+2120009,Jon Klaudt,False
+2120008,Loise Schroeder,False
+2120000,Meris Dendi,False
+2120002,Nariko Shiell,True
+2120005,Selime Sziladi,False
+# Number quarantined and their names:
+0
+# Expected result details for quarantined people:
+

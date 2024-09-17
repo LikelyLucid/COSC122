@@ -1,0 +1,26 @@
+# Number tested and their details:
+10
+2120000,Bassam Dougall,False
+2120002,Ellissa Eriksson,True
+2120003,Jerrine Patrizio,True
+2120005,Herb Kurash,False
+2120006,Vittoria Bordage,False
+2120007,Loise Schroeder,False
+2120010,Deanna Alkire,False
+2120012,Giustina Beauchemin,False
+2120013,Winifred Hutton,False
+2120014,Po Hosang,False
+# Number quarantined and their names:
+5
+Larry Glaser
+Cissiee Bednar
+Selime Sziladi
+Ellissa Eriksson
+Winifred Hutton
+# Expected result details for quarantined people:
+Larry Glaser,None,None
+Cissiee Bednar,None,None
+Selime Sziladi,None,None
+Ellissa Eriksson,2120002,True
+Winifred Hutton,2120013,False
+

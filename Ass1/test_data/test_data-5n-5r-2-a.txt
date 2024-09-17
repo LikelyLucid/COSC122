@@ -1,0 +1,21 @@
+# Number tested and their details:
+5
+2120007,Cissiee Bednar,True
+2120005,Jon Klaudt,False
+2120002,Selime Sziladi,False
+2120003,Vallipuram Kortekaas,True
+2120000,Zorina Latin,True
+# Number quarantined and their names:
+5
+Cissiee Bednar
+Andrzej Challice
+Rheal Wolfenbarger
+Jon Klaudt
+Meris Dendi
+# Expected result details for quarantined people:
+Cissiee Bednar,2120007,True
+Andrzej Challice,None,None
+Rheal Wolfenbarger,None,None
+Jon Klaudt,2120005,False
+Meris Dendi,None,None
+

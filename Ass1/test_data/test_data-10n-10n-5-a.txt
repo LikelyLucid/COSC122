@@ -1,0 +1,36 @@
+# Number tested and their details:
+10
+2120018,Bassam Dougall,False
+2120010,Daveta Bnrsport,False
+2120007,Ellissa Eriksson,True
+2120015,Giustina Beauchemin,False
+2120017,Jerrine Patrizio,True
+2120001,Leon Denest,False
+2120012,Matilda Knio,False
+2120014,Po Hosang,False
+2120009,Ursuline Walas,False
+2120013,Winifred Hutton,False
+# Number quarantined and their names:
+10
+Daveta Bnrsport
+Deanna Alkire
+Elfrida Postavsky
+Ellissa Eriksson
+Herb Kurash
+Kiyoon Broulik
+Loise Schroeder
+Matilda Knio
+Ursuline Walas
+Winifred Hutton
+# Expected result details for quarantined people:
+Daveta Bnrsport,2120010,False
+Deanna Alkire,None,None
+Elfrida Postavsky,None,None
+Ellissa Eriksson,2120007,True
+Herb Kurash,None,None
+Kiyoon Broulik,None,None
+Loise Schroeder,None,None
+Matilda Knio,2120012,False
+Ursuline Walas,2120009,False
+Winifred Hutton,2120013,False
+

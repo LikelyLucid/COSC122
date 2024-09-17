@@ -1,0 +1,31 @@
+# Number tested and their details:
+5
+2120000,Po Hosang,False
+2120005,Deanna Alkire,False
+2120006,Loise Schroeder,False
+2120007,Bassam Dougall,False
+2120010,Jerrine Patrizio,True
+# Number quarantined and their names:
+10
+Cissiee Bednar
+Jerrine Patrizio
+Po Hosang
+Jon Klaudt
+Celle Zitko
+Vittoria Bordage
+Herb Kurash
+Kiyoon Broulik
+Larry Glaser
+Selime Sziladi
+# Expected result details for quarantined people:
+Cissiee Bednar,None,None
+Jerrine Patrizio,2120010,True
+Po Hosang,2120000,False
+Jon Klaudt,None,None
+Celle Zitko,None,None
+Vittoria Bordage,None,None
+Herb Kurash,None,None
+Kiyoon Broulik,None,None
+Larry Glaser,None,None
+Selime Sziladi,None,None
+

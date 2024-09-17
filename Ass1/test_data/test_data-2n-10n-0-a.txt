@@ -1,0 +1,28 @@
+# Number tested and their details:
+2
+2120009,Herb Kurash,False
+2120005,Loise Schroeder,False
+# Number quarantined and their names:
+10
+Celle Zitko
+Cissiee Bednar
+Claribel Rayner
+Jon Klaudt
+Larry Glaser
+Nariko Shiell
+Selime Sziladi
+Vittoria Bordage
+Weldon Vuong
+Zorina Latin
+# Expected result details for quarantined people:
+Celle Zitko,None,None
+Cissiee Bednar,None,None
+Claribel Rayner,None,None
+Jon Klaudt,None,None
+Larry Glaser,None,None
+Nariko Shiell,None,None
+Selime Sziladi,None,None
+Vittoria Bordage,None,None
+Weldon Vuong,None,None
+Zorina Latin,None,None
+

@@ -1,0 +1,26 @@
+# Number tested and their details:
+0
+# Number quarantined and their names:
+10
+Andrzej Challice
+Claribel Rayner
+Larry Glaser
+Meris Dendi
+Nariko Shiell
+Rheal Wolfenbarger
+Selime Sziladi
+Vallipuram Kortekaas
+Weldon Vuong
+Zorina Latin
+# Expected result details for quarantined people:
+Andrzej Challice,None,None
+Claribel Rayner,None,None
+Larry Glaser,None,None
+Meris Dendi,None,None
+Nariko Shiell,None,None
+Rheal Wolfenbarger,None,None
+Selime Sziladi,None,None
+Vallipuram Kortekaas,None,None
+Weldon Vuong,None,None
+Zorina Latin,None,None
+

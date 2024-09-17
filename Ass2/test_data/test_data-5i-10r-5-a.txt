@@ -1,0 +1,31 @@
+# Number tested and their details:
+5
+2120000,Jerrine Patrizio,True
+2120005,Kiyoon Broulik,True
+2120006,Celle Zitko,True
+2120007,Elfrida Postavsky,False
+2120010,Bassam Dougall,False
+# Number quarantined and their names:
+10
+Jerrine Patrizio
+Larry Glaser
+Celle Zitko
+Kiyoon Broulik
+Bassam Dougall
+Cissiee Bednar
+Selime Sziladi
+Jon Klaudt
+Vittoria Bordage
+Elfrida Postavsky
+# Expected result details for quarantined people:
+Jerrine Patrizio,2120000,True
+Larry Glaser,None,None
+Celle Zitko,2120006,True
+Kiyoon Broulik,2120005,True
+Bassam Dougall,2120010,False
+Cissiee Bednar,None,None
+Selime Sziladi,None,None
+Jon Klaudt,None,None
+Vittoria Bordage,None,None
+Elfrida Postavsky,2120007,False
+

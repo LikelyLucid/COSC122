@@ -1,0 +1,18 @@
+# Number tested and their details:
+10
+2120000,Loise Schroeder,False
+2120001,Jerrine Patrizio,True
+2120002,Bassam Dougall,False
+2120003,Jon Klaudt,False
+2120005,Selime Sziladi,False
+2120006,Herb Kurash,False
+2120007,Cissiee Bednar,True
+2120008,Po Hosang,False
+2120009,Zorina Latin,True
+2120010,Deanna Alkire,False
+# Number quarantined and their names:
+1
+Nariko Shiell
+# Expected result details for quarantined people:
+Nariko Shiell,None,None
+

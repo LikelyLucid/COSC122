@@ -1,0 +1,76 @@
+# Number tested and their details:
+50
+2120000,Spence Goulet,True
+2120001,Linnie Germain,False
+2120002,Gabe Ryde,True
+2120003,Franco Nicolle,False
+2120005,Tate Gibbons,True
+2120006,Vm Jenner,True
+2120007,Marsie Herscovitch,True
+2120008,Des Joseph,True
+2120009,Albina Minck,True
+2120010,Aile Puelma,False
+2120012,Imre Sobiesiak,True
+2120013,Jennie Teniola,False
+2120014,Julia Ingrey,False
+2120015,Damian Kunkel,True
+2120016,Sonya Ficici,True
+2120018,Torie Manno,True
+2120019,Shekar Pappu,True
+2120020,Chelsie Pazos,True
+2120021,Lyndia Kovats,False
+2120022,Kalli Linaugh,False
+2120023,Salomi Mensinkai,False
+2120024,Nathaniel Kanungo,False
+2120025,Tommi Boyea,True
+2120026,Eugenia Panton,False
+2120027,Enrika Vanderhoeven,True
+2120028,Masood Bulan,True
+2120029,Sisile Dohan,True
+2120030,Katine Renfroe,False
+2120031,Jocelyne Joplin,False
+2120033,Lenee Malisic,False
+2120035,Cho Snedden,False
+2120036,Fekri Condurelis,False
+2120039,Costanza Hrenyk,False
+2120040,Trudey Binnington,True
+2120042,Cecelia Brisby,True
+2120044,Jillie Hadziomerovic,True
+2120045,Junie Blackwell,False
+2120046,Fredelia Lapointe,True
+2120047,Jemie Johansen,False
+2120048,Delbert Drappel,True
+2120049,Carlis Ozkan,False
+2120050,Jermaine Bainton,False
+2120051,Austin Alfred,True
+2120052,Willow Beckstead,True
+2120053,Panos Monforton,False
+2120054,Elnore Brownfield,False
+2120055,Pinakin Diaz,False
+2120057,Hubert Fischer,True
+2120058,Irvin Neufeld,True
+2120059,Hiroko Muller,False
+# Number quarantined and their names:
+10
+Elsey Linegar
+Cho Snedden
+Kelcey Kashul
+Shunhui Haggarty
+Hai Dower
+Vm Jenner
+Benedetta Shan
+Jen Popa
+Dnadoc Cucci
+Hesham Wefers
+# Expected result details for quarantined people:
+Elsey Linegar,None,None
+Cho Snedden,2120035,False
+Kelcey Kashul,None,None
+Shunhui Haggarty,None,None
+Hai Dower,None,None
+Vm Jenner,2120006,True
+Benedetta Shan,None,None
+Jen Popa,None,None
+Dnadoc Cucci,None,None
+Hesham Wefers,None,None
+
