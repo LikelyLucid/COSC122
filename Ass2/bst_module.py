@@ -271,23 +271,7 @@ def bst_result_finder(tested, quarantined):
             results.append((name, result[0], result[1]))
     return results, comparisons
 
-def get_list_in_middle_order(tested_list, root, comparisons=0):
-    """Builds a balanced BST from a sorted list using middle order insertion."""
-    if not tested_list:
-        return root, comparisons
 
-    mid_index = len(tested_list) // 2
-    nhi, name, result = tested_list[mid_index]
-
-    if root is None:
-        root = BstNode(name, (nhi, result))
-    else:
-        comparisons += bst_store_pair(root, name, (nhi, result))
-
-    root, comparisons = get_list_in_middle_order(tested_list[:mid_index], root, comparisons)
-    root, comparisons = get_list_in_middle_order(tested_list[mid_index + 1:], root, comparisons)
-
-    return root, comparisons
 
 
 
@@ -311,22 +295,6 @@ def smart_bst_result_finder_v1(tested, quarantined):
     """
     comparisons = 0
     results = []
-    is_sorted = all(tested[i][1] <= tested[i+1][1] for i in range(len(tested)-1))
-
-    if is_sorted:
-        root, comparisons = get_list_in_middle_order(tested, None) 
-    else:
-        root = BstNode(tested[0][1], (tested[0][0], tested[0][2]))
-        for nhi, name, result in tested[1:]:
-            comparisons += bst_store_pair(root, name, (nhi, result))
-
-    for name in quarantined:
-        result, comps = get_value_from_tree(root, name)
-        comparisons += comps
-        if result is None:
-            results.append((name, None, None))
-        else:
-            results.append((name, result[0], result[1]))
     return results, comparisons
 
 
