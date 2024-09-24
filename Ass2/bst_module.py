@@ -332,4 +332,12 @@ def smart_bst_result_finder_v2(tested, quarantined):
 if __name__ == "__main__":
     # put your own simple tests here
     # you don't need to submit this code
-    print("Testing bst_store_pair")
+    # comparison test
+    # Oriana, Sichao, Robertson, Sarina
+    # Jirina as root
+    names = [Name("Oriana"), Name("Sichao"), Name("Robertson"), Name("Sarina"), Name("Jirina")]
+    compaisons = 0
+    root = BstNode(names[4], (1234, "positive"))
+    for name in names[:4]:
+        compaisons += bst_store_pair(root, name, (1234, "positive"))
+    print(compaisons)
