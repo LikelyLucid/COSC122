@@ -1,4 +1,5 @@
 """Module for finding test results of quarantined people using a BST."""
+
 import sys
 from classes2 import Name, BstNode, bst_nested_repr
 
@@ -159,14 +160,13 @@ def get_value_from_tree(root, key):
         if key > root.key:
             root = root.right
             continue
-        else:
-            value = root.value
-            break
+        value = root.value
+        break
     return value, comparisons
 
 
 def min_key_in_bst(root):
-    """ Returns the minimum key value in the bst starting at root.
+    """Returns the minimum key value in the bst starting at root.
     Returns None if root is None
     Try to do this non-recursively and then try it recursively for fun.
     """
@@ -179,7 +179,7 @@ def min_key_in_bst(root):
 
 
 def max_key_in_bst(root):
-    """ Returns the maximum key value in the bst starting at root.
+    """Returns the maximum key value in the bst starting at root.
     Returns None if root is None.
     Try to do this non-recursively and then try it recursively for fun.
     """
@@ -192,7 +192,7 @@ def max_key_in_bst(root):
 
 
 def num_nodes_in_tree(root):
-    """ Returns the number of nodes in the tree starting at root.
+    """Returns the number of nodes in the tree starting at root.
     If the root is None then the number of nodes is zero.
     """
     num_nodes = 0
@@ -202,14 +202,14 @@ def num_nodes_in_tree(root):
 
 
 def bst_depth(root):
-    """ The level of a node is the number of edges from the root to the node
-        The depth is the maximum level of nodes in a tree.
-        Remember, the level of a node is how many edges there are on a path
-        from the root to the node.
-        So, the depth of a tree starting at the root is:
-        - zero if the root is None
-        - zero if the root has no children
-        - 1 + the max depth of the trees starting at the left and right child
+    """The level of a node is the number of edges from the root to the node
+    The depth is the maximum level of nodes in a tree.
+    Remember, the level of a node is how many edges there are on a path
+    from the root to the node.
+    So, the depth of a tree starting at the root is:
+    - zero if the root is None
+    - zero if the root has no children
+    - 1 + the max depth of the trees starting at the left and right child
     """
     depth = -1
     if root is not None:
@@ -218,7 +218,7 @@ def bst_depth(root):
 
 
 def bst_in_order(root, result_list=None):
-    """ Returns a list containing (key, value) tuples
+    """Returns a list containing (key, value) tuples
     from the bst, in the order of the keys.
     Basically does an in order traversal of the tree
     collecting (key, value) pairs as each node is visited.
@@ -270,9 +270,6 @@ def bst_result_finder(tested, quarantined):
         else:
             results.append((name, result[0], result[1]))
     return results, comparisons
-
-
-
 
 
 def smart_bst_result_finder_v1(tested, quarantined):
@@ -332,7 +329,7 @@ def smart_bst_result_finder_v2(tested, quarantined):
     return results, comparisons
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # put your own simple tests here
     # you don't need to submit this code
     print("Testing bst_store_pair")

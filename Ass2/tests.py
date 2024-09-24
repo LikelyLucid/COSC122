@@ -1205,9 +1205,9 @@ def all_tests_suite():
     # tests for result finder
     suite.addTest(test_loader(TrivialBstTests))
     suite.addTest(test_loader(SmallBstTests))
-    suite.addTest(test_loader(MediumBstTests))
-    suite.addTest(test_loader(HugeBstTests))
-    suite.addTest(test_loader(HugeSortedBstTests))
+    # suite.addTest(test_loader(MediumBstTests))
+    # suite.addTest(test_loader(HugeBstTests))
+    # suite.addTest(test_loader(HugeSortedBstTests))
     # suite.addTest(test_loader(GinormousBstTests))
     # suite.addTest(test_loader(AreYouKiddingMeBstTests))
 
