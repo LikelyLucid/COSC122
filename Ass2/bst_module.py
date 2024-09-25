@@ -336,8 +336,8 @@ if __name__ == "__main__":
     # Oriana, Sichao, Robertson, Sarina
     # Jirina as root
     names = [Name("Oriana"), Name("Sichao"), Name("Robertson"), Name("Sarina"), Name("Jirina")]
-    compaisons = 0
+    comparisons = 0
     root = BstNode(names[4], (1234, "positive"))
     for name in names[:4]:
-        compaisons += bst_store_pair(root, name, (1234, "positive"))
-    print(compaisons)
+        comparisons += bst_store_pair(root, name, (1234, "positive"))
+    print(comparisons)
