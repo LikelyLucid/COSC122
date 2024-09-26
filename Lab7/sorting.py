@@ -111,3 +111,6 @@ def shell_sort2(file_name, gap_list):
     print('    Gaps were {}: \n'.format(gap_list))
     return alist
 
+# if main
+if __name__ == '__main__':
+    insertion_sort('file3.txt')
