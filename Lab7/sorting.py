@@ -113,4 +113,4 @@ def shell_sort2(file_name, gap_list):
 
 # if main
 if __name__ == '__main__':
-    insertion_sort('file3.txt')
+    insertion_sort('file7.txt')
