@@ -110,3 +110,4 @@ def shell_sort2(file_name, gap_list):
     print('  Used {}  comparisons.'.format(total_comparisons))
     print('    Gaps were {}: \n'.format(gap_list))
     return alist
+
