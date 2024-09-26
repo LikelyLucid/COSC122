@@ -35,6 +35,7 @@ def insertion_sort(file_name):
         currentvalue = alist[index]
         position = index
         while position > 0 and not stop:
+            n_comps += 1
             if alist[position -1] > currentvalue:
                 alist[position] = alist[position -1]
                 position = position - 1
