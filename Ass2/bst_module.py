@@ -335,7 +335,7 @@ if __name__ == "__main__":
     # comparison test
     # Oriana, Sichao, Robertson, Sarina
     # Jirina as root
-    names = [Name("Oriana"), Name("Sichao"), Name("Robertson"), Name("Sarina"), Name("Jirina")]
+    names = [Name("Ovila"), Name("Mehendra"), Name("La"), Name("Linnea"), Name("Johanne")]
     comparisons = 0
     root = BstNode(names[4], (1234, "positive"))
     for name in names[:4]:
