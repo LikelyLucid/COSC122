@@ -1214,7 +1214,7 @@ def all_tests_suite():
     # fun optional extras
     # these test optional extra fun bonus questions
     # and are not worth any marks
-    # suite.addTest(test_loader(GinormousBstTestsV1))
+    suite.addTest(test_loader(GinormousBstTestsV1))
     # suite.addTest(test_loader(AreYouKiddingMeSmartBstTestsV1))
     # suite.addTest(test_loader(GinormousBstTestsV2))
     # suite.addTest(test_loader(AreYouKiddingMeSmartBstTestsV2))
