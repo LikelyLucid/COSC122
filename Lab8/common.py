@@ -80,7 +80,27 @@ def common_items(list_x, list_y):
 
 if __name__ == "__main__":
     # doctest.testmod()
-    data_a = read_data("./data/ordered_unique_4.txt")
-    data_b = read_data("./data/ordered_unique_5.txt")
+    data_16 = read_data("ordered_16.txt")
+    data_17 = read_data("ordered_17.txt")
+    smallest_common_16_17 = (
+        min(common_items(data_16, data_17)) if common_items(data_16, data_17) else None
+    )
+    print(
+        f"The smallest common number in ordered_16.txt and ordered_17.txt: {smallest_common_16_17}"
+    )
 
-    print(common_items(data_a, data_b))
+    data_12 = read_data("ordered_12.txt")
+    data_15 = read_data("ordered_15.txt")
+    biggest_common_12_15 = (
+        max(common_items(data_12, data_15)) if common_items(data_12, data_15) else None
+    )
+    print(
+        f"The biggest common number in ordered_12.txt and ordered_15.txt: {biggest_common_12_15}"
+    )
+
+    data_10 = read_data("ordered_10.txt")
+    data_11 = read_data("ordered_11.txt")
+    unique_common_10_11 = len(common_items(data_10, data_11))
+    print(
+        f"The number of unique common numbers between ordered_10.txt and ordered_11.txt: {unique_common_10_11}"
+    )
