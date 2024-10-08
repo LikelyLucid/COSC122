@@ -42,34 +42,58 @@ def times_vs_size(list_of_ns, n_trials=50, pivot_type=LEFT_PIVOT):
     return avg_times
 
 
-# You don't need to graph anything to answer the lab quiz questions
-# But it's always fun to visualise what is going on
-# If you want to get the average time for just one data size
-# you could make the list_of_ns a list with just one number
-# for example list_of_ns = [760] :)
+ascending_list = list(range(760))
+# random list of 760 numbers
+random_list = list(random.sample(range(760), 760))
 
-# n is used to denote how many key values are to be sorted
-# list_of_ns is a list of the size of lists to time sorting
-# initially [40, 80, 120 ... 760]
-# list_of_ns will be used as the x-axis on your graphs
-# and average time will be plotted on the y-axis
-# list_of_ns = list(range(40, 800, 20))
-list_of_ns = list(random.sample(range(40, 800), 100))
-# some quick and dirty plotting
 n_trials = 100
-avg_times_LEFT = times_vs_size(list_of_ns, n_trials, pivot_type=LEFT_PIVOT)
-avg_times_MO3 = times_vs_size(list_of_ns, n_trials, pivot_type=MO3_PIVOT)
-axes = pyplot.axes()
-# axes.plot(list_of_ns, avg_times, marker='o', color='blue')
-axes.plot(list_of_ns, avg_times_LEFT, marker='o', color='indigo')
-axes.plot(list_of_ns, avg_times_MO3, marker="x", color="red")
-axes.set_title(f'Time vs. List size, average of {n_trials} trials')
-axes.set_xlabel('n')
-axes.set_ylabel('Average Time per sort')
-pyplot.show()
+ascending = times_vs_size([760], n_trials, LEFT_PIVOT)
+random_amount = times_vs_size([760], n_trials, LEFT_PIVOT)
 
 
-# to add more lines to the plot simply make more calls to plot
-# eg,
-# axes.plot(list_of_ns, avg_times, marker='o', color='indigo')
-#
+print(f"Ascending list: {ascending}")
+print(f"Random list: {random_amount}")
+
+print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+print()
+
+print(f"average time for ascending list: {ascending}")
+print(f"average time for random list: {random_amount}")
+print()
+
+average_asc = sum(ascending) / len(ascending)
+average_rand = sum(random_amount) / len(random_amount)
+
+print(f"Ratio = {average_asc / average_rand}")
+
+# # You don't need to graph anything to answer the lab quiz questions
+# # But it's always fun to visualise what is going on
+# # If you want to get the average time for just one data size
+# # you could make the list_of_ns a list with just one number
+# # for example list_of_ns = [760] :)
+
+# # n is used to denote how many key values are to be sorted
+# # list_of_ns is a list of the size of lists to time sorting
+# # initially [40, 80, 120 ... 760]
+# # list_of_ns will be used as the x-axis on your graphs
+# # and average time will be plotted on the y-axis
+# # list_of_ns = list(range(40, 800, 20))
+# list_of_ns = list(random.sample(range(40, 800), 100))
+# # some quick and dirty plotting
+# n_trials = 100
+# avg_times_LEFT = times_vs_size(list_of_ns, n_trials, pivot_type=LEFT_PIVOT)
+# avg_times_MO3 = times_vs_size(list_of_ns, n_trials, pivot_type=MO3_PIVOT)
+# axes = pyplot.axes()
+# # axes.plot(list_of_ns, avg_times, marker='o', color='blue')
+# axes.plot(list_of_ns, avg_times_LEFT, marker='o', color='indigo')
+# axes.plot(list_of_ns, avg_times_MO3, marker="x", color="red")
+# axes.set_title(f'Time vs. List size, average of {n_trials} trials')
+# axes.set_xlabel('n')
+# axes.set_ylabel('Average Time per sort')
+# pyplot.show()
+
+
+# # to add more lines to the plot simply make more calls to plot
+# # eg,
+# # axes.plot(list_of_ns, avg_times, marker='o', color='indigo')
+# #
