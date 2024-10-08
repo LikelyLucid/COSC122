@@ -3,12 +3,12 @@ import random
 import doctest
 
 # funky styles
-LEFT_PIVOT = 'left-pivot'
-MO3_PIVOT = 'mo3-pivot'
+LEFT_PIVOT = "left-pivot"
+MO3_PIVOT = "mo3-pivot"
 
 
 def read_data(filename):
-    """ Returns a list of integers read from the file """
+    """Returns a list of integers read from the file"""
     with open(filename) as infile:
         values = [int(line.strip()) for line in infile]
     return values
@@ -66,8 +66,8 @@ def partition(values, left, right, style):
     elif style == MO3_PIVOT:
         pivot_i = pivot_index_mo3(values, left, right)
     else:
-        print('I am unfamiliar with your funky styles.')
-        print('Default left-pivot used...')
+        print("I am unfamiliar with your funky styles.")
+        print("Default left-pivot used...")
         pivot_i = left
 
     # Swap the pivot with the left item so we can keep the pivot
@@ -93,8 +93,7 @@ def partition(values, left, right, style):
             break
         else:
             # Otherwise... swap the items and keep going
-            values[leftmark], values[rightmark] = values[
-                rightmark], values[leftmark]
+            values[leftmark], values[rightmark] = values[rightmark], values[leftmark]
 
     # Put the pivot in its correct place
     if left != right:  # no point swapping with itself
@@ -106,7 +105,7 @@ def partition(values, left, right, style):
     return rightmark
 
 
-def quicksort_range(values, start, end, style='left-pivot'):
+def quicksort_range(values, start, end, style="left-pivot"):
     """Starts a quicksort that only guarantees that values between
        the start and end index (inclusive) are sorted.
        start and end must valid non-negative inices into values
@@ -133,10 +132,9 @@ def quicksort_range(values, start, end, style='left-pivot'):
     """
     # check function has been called with sensible start and end
     if start < 0 or end < 0 or end >= len(values):
-        raise IndexError(
-            'start and end must be valid non-negative indices into values')
+        raise IndexError("start and end must be valid non-negative indices into values")
     if end < start:
-        raise IndexError('The end should come after the start!')
+        raise IndexError("The end should come after the start!")
 
     copy_of_list = list(values)
     if len(copy_of_list) == 1:
@@ -144,12 +142,9 @@ def quicksort_range(values, start, end, style='left-pivot'):
         return copy_of_list
     else:
         # Quicksort the copy of the list
-        quicksort_range_helper(copy_of_list,
-                               0,
-                               len(copy_of_list) - 1,
-                               start,
-                               end,
-                               style)
+        quicksort_range_helper(
+            copy_of_list, 0, len(copy_of_list) - 1, start, end, style
+        )
         return copy_of_list
 
 
@@ -160,7 +155,15 @@ def quicksort_range_helper(values, left, right, start, end, style):
     but only if the left-right range has any overlap with the start-end range.
     """
     # ---start student section---
-    pass
+    if left >= right or right < start or left > end:
+        return
+
+    split = partition(values, left, right, style)
+
+    if split > start:
+        quicksort_range_helper(values, left, split - 1, start, end, style)
+    if split < end:
+        quicksort_range_helper(values, split + 1, right, start, end, style)
     # ===end student section===
 
 
@@ -223,7 +226,23 @@ def pivot_index_mo3(values, left, right):
     middle = (left + right) // 2
 
     # ---start student section---
+    if right == left + 1 or left == right:
+        return left
 
+    left_value = values[left]
+    middle_value = values[middle]
+    right_value = values[right]
+
+    if (left_value <= middle_value <= right_value) or (
+        right_value <= middle_value <= left_value
+    ):
+        return middle
+    elif (middle_value <= left_value <= right_value) or (
+        right_value <= left_value <= middle_value
+    ):
+        return left
+    else:
+        return right
     # ===end student section===
 
 
