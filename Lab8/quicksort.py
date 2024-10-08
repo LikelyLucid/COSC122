@@ -252,4 +252,4 @@ if __name__ == "__main__":
     # File read
     values = read_data("./data/list3.txt")
     index = pivot_index_mo3(values, 0, len(values) - 1)
-    print(values[index])
+
