@@ -57,10 +57,11 @@ list_of_ns = list(range(40, 800, 40))
 
 # some quick and dirty plotting
 n_trials = 50
+avg_times_LEFT = times_vs_size(list_of_ns, n_trials, pivot_type=LEFT_PIVOT)
 avg_times = times_vs_size(list_of_ns, n_trials, pivot_type=LEFT_PIVOT)
 axes = pyplot.axes()
 # axes.plot(list_of_ns, avg_times, marker='o', color='blue')
-axes.plot(list_of_ns, avg_times, marker='o', color='indigo')
+axes.plot(list_of_ns, avg_times_LEFT, marker='o', color='indigo')
 axes.set_title(f'Time vs. List size, average of {n_trials} trials')
 axes.set_xlabel('n')
 axes.set_ylabel('Average Time per sort')
