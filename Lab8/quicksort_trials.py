@@ -53,7 +53,7 @@ def times_vs_size(list_of_ns, n_trials=50, pivot_type=LEFT_PIVOT):
 # initially [40, 80, 120 ... 760]
 # list_of_ns will be used as the x-axis on your graphs
 # and average time will be plotted on the y-axis
-list_of_ns = list(range(40, 800, 40))
+list_of_ns = list(range(40, 800, 20))
 
 # some quick and dirty plotting
 n_trials = 100
