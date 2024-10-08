@@ -250,6 +250,24 @@ if __name__ == "__main__":
     # doctest.testmod()
 
     # File read
-    values = read_data("./data/list3.txt")
-    index = pivot_index_mo3(values, 0, len(values) - 1)
+    values = read_data("./data/list0.txt")
+    left, right = 0, len(values) - 1
+    pivot_index = pivot_index_mo3(values, left, right)
 
+    # Finding the median of the pivot index values in list0.txt
+    pivot_indices = []
+    while left < right:
+        pivot_index = pivot_index_mo3(values, left, right)
+        pivot_indices.append(pivot_index)
+        left += 1
+        right -= 1
+
+    sorted_pivot_indices = sorted(pivot_indices)
+    n = len(sorted_pivot_indices)
+    if n % 2 == 1:
+        median_pivot = sorted_pivot_indices[n // 2]
+    else:
+        median_pivot = (
+            sorted_pivot_indices[n // 2 - 1] + sorted_pivot_indices[n // 2]
+        ) / 2
+    print(f"The median of the pivot indices in list0.txt is: {median_pivot}")
