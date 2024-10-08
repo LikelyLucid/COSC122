@@ -79,4 +79,8 @@ def common_items(list_x, list_y):
 
 
 if __name__ == "__main__":
-    doctest.testmod()
+    # doctest.testmod()
+    data_a = read_data("./data/ordered_unique_4.txt")
+    data_b = read_data("./data/ordered_unique_5.txt")
+
+    print(common_items(data_a, data_b))
