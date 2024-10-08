@@ -56,7 +56,7 @@ def times_vs_size(list_of_ns, n_trials=50, pivot_type=LEFT_PIVOT):
 list_of_ns = list(range(40, 800, 40))
 
 # some quick and dirty plotting
-n_trials = 50
+n_trials = 100
 avg_times_LEFT = times_vs_size(list_of_ns, n_trials, pivot_type=LEFT_PIVOT)
 avg_times_MO3 = times_vs_size(list_of_ns, n_trials, pivot_type=MO3_PIVOT)
 axes = pyplot.axes()
