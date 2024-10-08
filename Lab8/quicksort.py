@@ -247,4 +247,8 @@ def pivot_index_mo3(values, left, right):
 
 
 if __name__ == "__main__":
-    doctest.testmod()
+    # doctest.testmod()
+
+    # File read
+    values = read_data("./data/list3.txt")
+    print(pivot_index_mo3(values, 0, len(values) - 1))
