@@ -223,7 +223,7 @@ def pivot_index_mo3(values, left, right):
     middle = (left + right) // 2
 
     # ---start student section---
-    pass
+
     # ===end student section===
 
 
