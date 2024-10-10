@@ -77,7 +77,7 @@ class MinHeap(Heap):
         [None, 2, 3, 5, 7, 4]
         """
         # ---start student section---
-        pass
+        
         # ===end student section===
 
     # -------------------------------------------------
