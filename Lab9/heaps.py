@@ -77,6 +77,7 @@ class MinHeap(Heap):
         [None, 2, 3, 5, 7, 4]
         """
         # ---start student section---
+        self._items.append(item)
         
         # ===end student section===
 
