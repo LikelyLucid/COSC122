@@ -78,7 +78,7 @@ class MinHeap(Heap):
         """
         # ---start student section---
         self._items.append(item)
-        
+        self._sift_up(len(self))
         # ===end student section===
 
     # -------------------------------------------------
