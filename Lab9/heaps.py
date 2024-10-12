@@ -218,4 +218,15 @@ if __name__ == '__main__':
     doctest.testmod()
 
     h = MinHeap()
-    data = read
+    data = load_file('list6.txt')
+    for line in data:
+        h.insert(line)
+    print(h.peek_min())
+    print("\n#########\n")
+    g = MinHeap()
+    data = load_file('list7.txt')
+    for line in data:
+        g.insert(line)
+
+    for i in range(5):
+        print(g.pop_min())
