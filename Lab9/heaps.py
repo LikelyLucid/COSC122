@@ -222,7 +222,9 @@ if __name__ == '__main__':
     for line in data:
         h.insert(line)
     print(h.peek_min())
+
     print("\n#########\n")
+
     g = MinHeap()
     data = load_file('list7.txt')
     for line in data:
@@ -230,3 +232,16 @@ if __name__ == '__main__':
 
     for i in range(5):
         print(g.pop_min())
+
+    print("\n#########\n")
+
+    k = MinHeap()
+
+    data = load_file('list8.txt')
+
+    for line in data:
+        k.insert(line)
+
+    for i in range(100):
+        k.pop_min()
+    print(k.pop_min())
