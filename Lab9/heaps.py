@@ -218,10 +218,4 @@ if __name__ == '__main__':
     doctest.testmod()
 
     h = MinHeap()
-    h.insert(1)
-    h.insert(5)
-    h.insert(2)
-    h.insert(7)
-    print(h.validate())
-    h.pop_min()
-    print(h.validate())
+    data = read
