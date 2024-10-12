@@ -162,7 +162,6 @@ class MinHeap(Heap):
             return self._items.pop()
         min_item = self._items[1]
         self._items[1] = self._items.pop()
-
         self._sift_down(1)
         # ===end student section===
 
@@ -205,7 +204,13 @@ class MinHeap(Heap):
         """
 
         # ---start student section---
-        
+        for i in range(1, len(self)):
+            left = 2 * i
+            right = left + 1
+            if left <= len(self) and self._items[i] > self._items[left]:
+                return False
+            if right <= len(self) and self._items[i] > self._items[right]:
+                return False
         # ===end student section===
 
 
