@@ -220,6 +220,6 @@ if __name__ == '__main__':
     h.insert(5)
     h.insert(2)
     h.insert(7)
-    h.validate()
+    print(h.validate())
     h.pop_min()
     print(h.validate())
