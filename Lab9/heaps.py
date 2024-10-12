@@ -156,7 +156,14 @@ class MinHeap(Heap):
         3
         """
         # ---start student section---
-        pass
+        if len(self) == 0:
+            return None
+        if len(self) == 1:
+            return self._items.pop()
+        min_item = self._items[1]
+        self._items[1] = self._items.pop()
+        self._sift_down(1)
+        return min_item
         # ===end student section===
 
     # -------------------------------------------------
