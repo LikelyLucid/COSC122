@@ -176,6 +176,8 @@ class MinHeap(Heap):
             left = 2 * index
             right = left + 1
             smallest = left
+            if right <= len(self) and self._items[right] < self._items[left]:
+                smallest = right
             if self._items[index] > self._items[smallest]:
                 self._items[smallest], self._items[index] = self._items[index], self._items[smallest]
                 self._sift_down(smallest)
