@@ -105,7 +105,7 @@ class Max_3_Heap(Heap):
         while it is larger than its parent.
         """
         # ---start student section---
-        pass
+        parent = index // 3
         # ===end student section===
 
     # -------------------------------------------------
