@@ -105,7 +105,14 @@ class Max_3_Heap(Heap):
         while it is larger than its parent.
         """
         # ---start student section---
-        parent = index // 3
+        parent = (index) // 3
+        if index > 1 and self._items[index] > self._items[parent]:
+            self._items[index], self._items[parent] = (
+                self._items[parent],
+                self._items[index],
+            )
+            # Carry on sifting up from the parent index
+            self._sift_up(parent)
         # ===end student section===
 
     # -------------------------------------------------
@@ -240,5 +247,3 @@ if __name__ == '__main__':
     my_heap = Max_3_Heap()
     for item in [20, 18,13,15,11,12,16,10,9,11,13,2,9,10,1]:
         my_heap.insert(item)
-
-
