@@ -215,3 +215,11 @@ if __name__ == '__main__':
     os.environ['TERM'] = 'linux'  # Suppress ^[[?1034h
     doctest.testmod()
 
+    h = MinHeap()
+    h.insert(1)
+    h.insert(5)
+    h.insert(2)
+    h.insert(7)
+    h.validate()
+    h.pop_min()
+    print(h.validate())
