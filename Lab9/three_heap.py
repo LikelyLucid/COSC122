@@ -1,20 +1,23 @@
 """ A module dedicated to the three heap """
+
 import doctest
 import os
 
 
 # --------------------------------------------------------------------------
 def load_file(file_name):
-    """ Returns a list of numbers from the file.
-        The file should contain one integer per line.
+    """Returns a list of numbers from the file.
+    The file should contain one integer per line.
     """
     with open(file_name) as infile:
         lines = infile.read().splitlines()
     nums = [int(line) for line in lines]
     return nums
 
+
 # -------------------------------------------------
 # -------------------------------------------------
+
 
 class Heap(object):
     """An abstract interface for a Heap."""
@@ -52,7 +55,7 @@ class Heap(object):
         it is just a place holder.
         The heap data values start at index 1.
         """
-        return f'Raw data: {str(self._items)}'
+        return f"Raw data: {str(self._items)}"
 
 
 # -------------------------------------------------
@@ -105,7 +108,7 @@ class Max_3_Heap(Heap):
         while it is larger than its parent.
         """
         # ---start student section---
-        parent = (index) // 3
+        parent = (index + 1) // 3
         if index > 1 and self._items[index] > self._items[parent]:
             self._items[index], self._items[parent] = (
                 self._items[parent],
@@ -192,7 +195,7 @@ class Max_3_Heap(Heap):
         True
         """
 
-        if len(self) >0:
+        if len(self) > 0:
             max_item = self._items[1]
             if len(self) > 1:
                 # If there are more items in the heap, swap the last one with the
@@ -214,7 +217,33 @@ class Max_3_Heap(Heap):
         heap while it is smaller than any of its children.
         """
         # ---start student section---
-        pass
+        largest = index
+        left_child = 3 * index - 1
+        middle_child = 3 * index
+        right_child = 3 * index + 1
+
+        # Check if left child exists and is greater than current largest
+        if left_child <= len(self) and self._items[left_child] > self._items[largest]:
+            largest = left_child
+
+        # Check if middle child exists and is greater than current largest
+        if (
+            middle_child <= len(self)
+            and self._items[middle_child] > self._items[largest]
+        ):
+            largest = middle_child
+
+        # Check if right child exists and is greater than current largest
+        if right_child <= len(self) and self._items[right_child] > self._items[largest]:
+            largest = right_child
+
+        # If largest is not the current index, swap and continue sifting down
+        if largest != index:
+            self._items[index], self._items[largest] = (
+                self._items[largest],
+                self._items[index],
+            )
+            self._sift_down(largest)
         # ===end student section===
 
     # -------------------------------------------------
@@ -236,14 +265,40 @@ class Max_3_Heap(Heap):
         False
         """
         # ---start student section---
-        pass
+        for i in range(1, len(self._items)):
+            left_child = 3 * i - 1
+            middle_child = 3 * i
+            right_child = 3 * i + 1
+
+            # Check if left child exists and is greater than the parent
+            if (
+                left_child < len(self._items)
+                and self._items[left_child] > self._items[i]
+            ):
+                return False
+
+            # Check if middle child exists and is greater than the parent
+            if (
+                middle_child < len(self._items)
+                and self._items[middle_child] > self._items[i]
+            ):
+                return False
+
+            # Check if right child exists and is greater than the parent
+            if (
+                right_child < len(self._items)
+                and self._items[right_child] > self._items[i]
+            ):
+                return False
+
+        return True
         # ===end student section===
 
 
-if __name__ == '__main__':
-    os.environ['TERM'] = 'linux'  # Suppress ^[[?1034h
+if __name__ == "__main__":
+    os.environ["TERM"] = "linux"  # Suppress ^[[?1034h
     doctest.testmod()
 
     my_heap = Max_3_Heap()
-    for item in [20, 18,13,15,11,12,16,10,9,11,13,2,9,10,1]:
+    for item in [20, 18, 13, 15, 11, 12, 16, 10, 9, 11, 13, 2, 9, 10, 1]:
         my_heap.insert(item)
