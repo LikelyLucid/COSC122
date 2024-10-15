@@ -45,7 +45,7 @@ def dual_result_finder(tested, quarantined):
             results.append((quarantined[j], None, None))
             j += 1
             continue
-        
+
         results.append((quarantined[j], tested[i][0], tested[i][2]))
         i += 1
         j += 1
