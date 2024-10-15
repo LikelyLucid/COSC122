@@ -48,7 +48,6 @@ class HashTable:
         # Note: self._data[i] will be the head of a linked list
         self._data = [None] * initial_size
         HashTable._memory_used += initial_size
-        StatCounter.increment(HASH_TABLES_CREATED)
 
     def store_pair(self, key, value):
         """
