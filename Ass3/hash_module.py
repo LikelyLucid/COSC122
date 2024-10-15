@@ -184,10 +184,10 @@ def hash_result_finder(tested, quarantined, load_factor=0.5):
     if len(tested) > 0:
         table_size = int(len(tested) / load_factor)
         hash_table = HashTable(table_size)
-    # think about how to generate results list if tested is empty
-    #    Hint: you don't want to generate a hash table with size 0...
+    else:
+        hash_table = HashTable(1)  # Avoid creating a hash table with size 0
+
     results = []
-    # ---start student section---
     for nhi, name, result in tested:
         hash_table.store_pair(name, (nhi, result))
 
@@ -196,10 +196,11 @@ def hash_result_finder(tested, quarantined, load_factor=0.5):
         result = hash_table.get_value(name)
         if result is not None:
             results.append((name, result[0], result[1]))
+        else:
+            results.append((name, None, None))
         comparisons += hash_table.comparisons_used
         hash_table.comparisons_used = 0
-    # ===end student section===
-    # hint: you can get comparisons from the hash_table if one was used.
+
     return results, comparisons
 
 

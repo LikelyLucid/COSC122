@@ -976,13 +976,13 @@ def all_tests_suite():
     # the following test your hash_result_finder function
     suite.addTest(test_loader(TrivialHashTests))
     suite.addTest(test_loader(SmallHashTests))
-    # suite.addTest(test_loader(MediumHashTests))
-    # suite.addTest(test_loader(MediumHashLoadFactorTests))
-    # suite.addTest(test_loader(BigHashTests))
-    # suite.addTest(test_loader(BigHashLoadFactorTests))
-    # suite.addTest(test_loader(HugeHashTests))
-    # suite.addTest(test_loader(SmallExactHashTests))
-    # suite.addTest(test_loader(GinormousHashTests))
+    suite.addTest(test_loader(MediumHashTests))
+    suite.addTest(test_loader(MediumHashLoadFactorTests))
+    suite.addTest(test_loader(BigHashTests))
+    suite.addTest(test_loader(BigHashLoadFactorTests))
+    suite.addTest(test_loader(HugeHashTests))
+    suite.addTest(test_loader(SmallExactHashTests))
+    suite.addTest(test_loader(GinormousHashTests))
 
 
     # the following test your dual_result_finder function
