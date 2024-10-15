@@ -32,7 +32,7 @@ def dual_result_finder(tested, quarantined):
     comparisons = 0
     results = []
     # ---start student section---
-    pass
+    
     # ===end student section===
     return results, comparisons
 
