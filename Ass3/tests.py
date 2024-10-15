@@ -970,27 +970,27 @@ def all_tests_suite():
     # ready to run such tests
 
     # the following test your HashTable class
-    suite.addTest(test_loader(TrivialHashTableTests))
-    suite.addTest(test_loader(HashTableTests))
+    # suite.addTest(test_loader(TrivialHashTableTests))
+    # suite.addTest(test_loader(HashTableTests))
 
-    # the following test your hash_result_finder function
-    suite.addTest(test_loader(TrivialHashTests))
-    suite.addTest(test_loader(SmallHashTests))
-    suite.addTest(test_loader(MediumHashTests))
-    suite.addTest(test_loader(MediumHashLoadFactorTests))
-    suite.addTest(test_loader(BigHashTests))
-    suite.addTest(test_loader(BigHashLoadFactorTests))
-    suite.addTest(test_loader(HugeHashTests))
-    suite.addTest(test_loader(SmallExactHashTests))
-    suite.addTest(test_loader(GinormousHashTests))
+    # # the following test your hash_result_finder function
+    # suite.addTest(test_loader(TrivialHashTests))
+    # suite.addTest(test_loader(SmallHashTests))
+    # suite.addTest(test_loader(MediumHashTests))
+    # suite.addTest(test_loader(MediumHashLoadFactorTests))
+    # suite.addTest(test_loader(BigHashTests))
+    # suite.addTest(test_loader(BigHashLoadFactorTests))
+    # suite.addTest(test_loader(HugeHashTests))
+    # suite.addTest(test_loader(SmallExactHashTests))
+    # suite.addTest(test_loader(GinormousHashTests))
 
 
     # the following test your dual_result_finder function
-    # suite.addTest(test_loader(HelpfulDualTests))
-    # suite.addTest(test_loader(TrivialDualTests))
-    # suite.addTest(test_loader(SmallDualTests))
-    # suite.addTest(test_loader(DualTestsExact))
-    # suite.addTest(test_loader(MediumDualTests))
+    suite.addTest(test_loader(HelpfulDualTests))
+    suite.addTest(test_loader(TrivialDualTests))
+    suite.addTest(test_loader(SmallDualTests))
+    suite.addTest(test_loader(DualTestsExact))
+    suite.addTest(test_loader(MediumDualTests))
     # suite.addTest(test_loader(BigDualTests))
     # suite.addTest(test_loader(HugeDualTests))
     # suite.addTest(test_loader(GinormousDualTests))

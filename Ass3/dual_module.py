@@ -31,9 +31,29 @@ def dual_result_finder(tested, quarantined):
     """
     comparisons = 0
     results = []
-    # ---start student section---
-    
-    # ===end student section===
+    i, j = 0, 0
+
+    while i < len(tested) and j < len(quarantined):
+        comparisons += 1
+        if tested[i][1] < quarantined[j]:
+            i += 1
+            continue
+
+        comparisons += 1
+
+        if quarantined[j] < tested[i][1]:
+            results.append((quarantined[j], None, None))
+            j += 1
+            continue
+        
+        results.append((quarantined[j], tested[i][0], tested[i][2]))
+        i += 1
+        j += 1
+
+    while j < len(quarantined):
+        results.append((quarantined[j], None, None))
+        j += 1
+
     return results, comparisons
 
 
