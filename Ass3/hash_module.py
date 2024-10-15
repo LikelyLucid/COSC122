@@ -94,7 +94,18 @@ class HashTable:
         See the my_tests function below for some starter tests/examples.
         """
         # ---start student section---
-        
+        slot_index = hash(key) % self.number_of_slots
+
+        head = self._data[slot_index]
+        if head is None:
+            return None
+
+        current_node = head
+        while current_node is not None:
+            self.comparisons_used += 1
+            if current_node.key == key:
+                return current_node.value
+            current_node = current_node.next_node
         # ===end student section===
 
     def __repr__(self):
@@ -177,7 +188,16 @@ def hash_result_finder(tested, quarantined, load_factor=0.5):
     #    Hint: you don't want to generate a hash table with size 0...
     results = []
     # ---start student section---
-    pass
+    for nhi, name, result in tested:
+        hash_table.store_pair(name, (nhi, result))
+
+    comparisons = 0
+    for name in quarantined:
+        result = hash_table.get_value(name)
+        if result is not None:
+            results.append((name, result[0], result[1]))
+        comparisons += hash_table.comparisons_used
+        hash_table.comparisons_used = 0
     # ===end student section===
     # hint: you can get comparisons from the hash_table if one was used.
     return results, comparisons
