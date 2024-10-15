@@ -1,0 +1,6 @@
+# Number tested and their details:
+0
+# Number quarantined and their names:
+0
+# Expected result details for quarantined people:
+

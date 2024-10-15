@@ -1,0 +1,76 @@
+# Number tested and their details:
+50
+2120025,Aile Puelma,False
+2120049,Albina Minck,True
+2120031,Austin Alfred,True
+2120022,Benedetta Shan,False
+2120021,Carlis Ozkan,False
+2120052,Cecelia Brisby,True
+2120014,Chelsie Pazos,True
+2120023,Costanza Hrenyk,False
+2120036,Damian Kunkel,True
+2120059,Delbert Drappel,True
+2120058,Des Joseph,True
+2120033,Dnadoc Cucci,True
+2120051,Elnore Brownfield,False
+2120013,Enrika Vanderhoeven,True
+2120019,Eugenia Panton,False
+2120020,Fekri Condurelis,False
+2120016,Franco Nicolle,False
+2120028,Fredelia Lapointe,True
+2120050,Gabe Ryde,True
+2120012,Hesham Wefers,True
+2120015,Hiroko Muller,False
+2120005,Imre Sobiesiak,True
+2120040,Irvin Neufeld,True
+2120053,Jemie Johansen,False
+2120057,Jen Popa,False
+2120029,Jennie Teniola,False
+2120000,Jermaine Bainton,False
+2120007,Jillie Hadziomerovic,True
+2120008,Jocelyne Joplin,False
+2120002,Julia Ingrey,False
+2120006,Junie Blackwell,False
+2120042,Kalli Linaugh,False
+2120010,Katine Renfroe,False
+2120009,Lenee Malisic,False
+2120048,Linnie Germain,False
+2120047,Lyndia Kovats,False
+2120046,Marsie Herscovitch,True
+2120026,Masood Bulan,True
+2120054,Panos Monforton,False
+2120003,Pinakin Diaz,False
+2120027,Salomi Mensinkai,False
+2120018,Shekar Pappu,True
+2120044,Sisile Dohan,True
+2120045,Sonya Ficici,True
+2120035,Spence Goulet,True
+2120030,Tate Gibbons,True
+2120001,Tommi Boyea,True
+2120024,Torie Manno,True
+2120055,Trudey Binnington,True
+2120039,Willow Beckstead,True
+# Number quarantined and their names:
+10
+Franco Nicolle
+Eugenia Panton
+Pinakin Diaz
+Junie Blackwell
+Torie Manno
+Spence Goulet
+Shekar Pappu
+Sonya Ficici
+Jermaine Bainton
+Gabe Ryde
+# Expected result details for quarantined people:
+Franco Nicolle,2120016,False
+Eugenia Panton,2120019,False
+Pinakin Diaz,2120003,False
+Junie Blackwell,2120006,False
+Torie Manno,2120024,True
+Spence Goulet,2120035,True
+Shekar Pappu,2120018,True
+Sonya Ficici,2120045,True
+Jermaine Bainton,2120000,False
+Gabe Ryde,2120050,True
+

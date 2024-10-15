@@ -1,0 +1,8 @@
+# Number tested and their details:
+2
+2120000,Glenn Cosgrove,False
+2120001,Albert Willison,False
+# Number quarantined and their names:
+0
+# Expected result details for quarantined people:
+

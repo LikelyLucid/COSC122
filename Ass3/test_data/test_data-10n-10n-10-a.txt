@@ -1,0 +1,36 @@
+# Number tested and their details:
+10
+2120014,Bassam Dougall,False
+2120017,Deanna Alkire,False
+2120012,Ellissa Eriksson,True
+2120013,Giustina Beauchemin,False
+2120001,Herb Kurash,False
+2120015,Jerrine Patrizio,True
+2120018,Loise Schroeder,False
+2120010,Matilda Knio,False
+2120007,Po Hosang,False
+2120009,Winifred Hutton,False
+# Number quarantined and their names:
+10
+Bassam Dougall
+Deanna Alkire
+Ellissa Eriksson
+Giustina Beauchemin
+Herb Kurash
+Jerrine Patrizio
+Loise Schroeder
+Matilda Knio
+Po Hosang
+Winifred Hutton
+# Expected result details for quarantined people:
+Bassam Dougall,2120014,False
+Deanna Alkire,2120017,False
+Ellissa Eriksson,2120012,True
+Giustina Beauchemin,2120013,False
+Herb Kurash,2120001,False
+Jerrine Patrizio,2120015,True
+Loise Schroeder,2120018,False
+Matilda Knio,2120010,False
+Po Hosang,2120007,False
+Winifred Hutton,2120009,False
+

@@ -1,0 +1,28 @@
+# Number tested and their details:
+2
+2120009,Celle Zitko,True
+2120005,Kiyoon Broulik,True
+# Number quarantined and their names:
+10
+Cissiee Bednar
+Claribel Rayner
+Jon Klaudt
+Kiyoon Broulik
+Larry Glaser
+Nariko Shiell
+Selime Sziladi
+Vittoria Bordage
+Weldon Vuong
+Zorina Latin
+# Expected result details for quarantined people:
+Cissiee Bednar,None,None
+Claribel Rayner,None,None
+Jon Klaudt,None,None
+Kiyoon Broulik,2120005,True
+Larry Glaser,None,None
+Nariko Shiell,None,None
+Selime Sziladi,None,None
+Vittoria Bordage,None,None
+Weldon Vuong,None,None
+Zorina Latin,None,None
+

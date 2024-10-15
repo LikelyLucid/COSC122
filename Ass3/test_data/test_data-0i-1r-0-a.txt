@@ -1,0 +1,8 @@
+# Number tested and their details:
+0
+# Number quarantined and their names:
+1
+Myrtie Swinney
+# Expected result details for quarantined people:
+Myrtie Swinney,None,None
+

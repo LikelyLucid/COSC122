@@ -1,0 +1,13 @@
+# Number tested and their details:
+5
+2120000,Claribel Rayner,True
+2120001,Lizzy Benefits,True
+2120003,Meris Dendi,False
+2120005,Nariko Shiell,True
+2120004,Selime Sziladi,False
+# Number quarantined and their names:
+1
+Sabina Starkes
+# Expected result details for quarantined people:
+Sabina Starkes,None,None
+

@@ -1,0 +1,15 @@
+# Number tested and their details:
+5
+2120000,Cissiee Bednar,True
+2120006,Claribel Rayner,True
+2120005,Nariko Shiell,True
+2120003,Rheal Wolfenbarger,False
+2120001,Selime Sziladi,False
+# Number quarantined and their names:
+2
+Cissiee Bednar
+Andrzej Challice
+# Expected result details for quarantined people:
+Cissiee Bednar,2120000,True
+Andrzej Challice,None,None
+

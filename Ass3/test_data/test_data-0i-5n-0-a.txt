@@ -1,0 +1,16 @@
+# Number tested and their details:
+0
+# Number quarantined and their names:
+5
+Andrzej Challice
+Lizzy Benefits
+Meris Dendi
+Rheal Wolfenbarger
+Sabina Starkes
+# Expected result details for quarantined people:
+Andrzej Challice,None,None
+Lizzy Benefits,None,None
+Meris Dendi,None,None
+Rheal Wolfenbarger,None,None
+Sabina Starkes,None,None
+

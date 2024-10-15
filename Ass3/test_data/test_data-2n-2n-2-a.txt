@@ -1,0 +1,12 @@
+# Number tested and their details:
+2
+2120001,Albert Willison,False
+2120000,Sabina Starkes,False
+# Number quarantined and their names:
+2
+Albert Willison
+Sabina Starkes
+# Expected result details for quarantined people:
+Albert Willison,2120001,False
+Sabina Starkes,2120000,False
+

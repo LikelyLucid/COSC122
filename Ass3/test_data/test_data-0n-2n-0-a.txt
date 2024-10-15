@@ -1,0 +1,10 @@
+# Number tested and their details:
+0
+# Number quarantined and their names:
+2
+Glenn Cosgrove
+Katarina Laine
+# Expected result details for quarantined people:
+Glenn Cosgrove,None,None
+Katarina Laine,None,None
+

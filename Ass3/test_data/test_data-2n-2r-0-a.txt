@@ -1,0 +1,12 @@
+# Number tested and their details:
+2
+2120000,Sabina Starkes,False
+2120001,Tape Yogeswaran,False
+# Number quarantined and their names:
+2
+Albert Willison
+Filippa Mau
+# Expected result details for quarantined people:
+Albert Willison,None,None
+Filippa Mau,None,None
+

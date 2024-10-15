@@ -1,0 +1,18 @@
+# Number tested and their details:
+2
+2120003,Nariko Shiell,True
+2120005,Claribel Rayner,True
+# Number quarantined and their names:
+5
+Vallipuram Kortekaas
+Meris Dendi
+Andrzej Challice
+Rheal Wolfenbarger
+Claribel Rayner
+# Expected result details for quarantined people:
+Vallipuram Kortekaas,None,None
+Meris Dendi,None,None
+Andrzej Challice,None,None
+Rheal Wolfenbarger,None,None
+Claribel Rayner,2120005,True
+
