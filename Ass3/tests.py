@@ -991,9 +991,9 @@ def all_tests_suite():
     suite.addTest(test_loader(SmallDualTests))
     suite.addTest(test_loader(DualTestsExact))
     suite.addTest(test_loader(MediumDualTests))
-    # suite.addTest(test_loader(BigDualTests))
-    # suite.addTest(test_loader(HugeDualTests))
-    # suite.addTest(test_loader(GinormousDualTests))
+    suite.addTest(test_loader(BigDualTests))
+    suite.addTest(test_loader(HugeDualTests))
+    suite.addTest(test_loader(GinormousDualTests))
 
 
     return suite
