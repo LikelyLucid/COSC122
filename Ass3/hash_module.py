@@ -94,7 +94,7 @@ class HashTable:
         See the my_tests function below for some starter tests/examples.
         """
         # ---start student section---
-        pass
+        
         # ===end student section===
 
     def __repr__(self):
